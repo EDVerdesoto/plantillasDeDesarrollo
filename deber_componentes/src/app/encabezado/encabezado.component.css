@@ -1,0 +1,19 @@
+h1 {
+    color: #876f55;
+    font-weight: bold;
+    padding: 5px 5px 0px ;
+    background-color: #b1ceaf
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:#b1ceaf;
+    padding: 5px 40px 5px 40px;
+    font-size: 1.2rem;
+    border-top: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

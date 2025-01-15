@@ -1,0 +1,42 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+  
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  #menor {
+    background-color: #e74c3c;
+  }
+  
+  #mayor {
+    background-color: #34db55;
+  }
+
+  #menor:hover {
+    background-color: #963328;
+  }
+
+  #mayor:hover {
+    background-color: #229e3a;
+  }

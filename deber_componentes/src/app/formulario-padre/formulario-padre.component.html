@@ -1,0 +1,12 @@
+<div>
+  <h3>Calculadora de Jubilación</h3>
+  <label for="nombre">Nombre:</label>
+  <input type="text" [(ngModel)]="nombre" placeholder="Nombre">
+  <label for="edad">Edad:</label>
+  <input type="number" [(ngModel)]="edad" placeholder="Edad">
+  <app-formulario-hijo [nombre]="nombre" [edad]="edad" (datosEnviados)="ActualizarResultado($event)"></app-formulario-hijo> 
+  <div>
+    <p>{{resultadoPadre}}</p>
+  </div>
+  
+</div>
