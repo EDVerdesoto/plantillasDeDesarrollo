@@ -1,24 +1,19 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-calculadora-hijo',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './calculadora-hijo.component.html',
   styleUrl: './calculadora-hijo.component.css'
 })
 export class CalculadoraHijoComponent {
 
-  calcularCarrito(productos: { nombre: string; precio: number }[]){
-    
-    let total = 0;
+  @Input() items: { name: string; price: number; quantity: number }[] = [];
 
-    productos.forEach((producto)=>{
-      total += producto.precio;
-    });
-
-    return total;
-
+  calculateTotal(): number {
+    return this.items.reduce((total, item) => total + item.price * item.quantity, 0);
   }
 
 }
