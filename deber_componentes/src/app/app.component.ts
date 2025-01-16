@@ -7,18 +7,21 @@ import { CalculadoraPadreComponent } from './calculadora-padre/calculadora-padre
 import { CalculadoraHijoComponent } from './calculadora-hijo/calculadora-hijo.component';
 import { VideoHijoComponent } from './video-hijo/video-hijo.component';
 import { VideoPadreComponent } from './video-padre/video-padre.component';
+import { ImagenesPadreComponent } from './imagenes-padre/imagenes-padre.component';
+import { ValidarFormularioPadreComponent } from './validar-formulario-padre/validar-formulario-padre.component';
 
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
     EncabezadoComponent, 
     ContadorPadreComponent,
     FormularioPadreComponent,
     CalculadoraHijoComponent,
     CalculadoraPadreComponent,
     VideoHijoComponent,
-    VideoPadreComponent
+    VideoPadreComponent,
+    ImagenesPadreComponent,
+    ValidarFormularioPadreComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

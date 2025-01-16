@@ -1,0 +1,20 @@
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 12.5%;
+    height: 90vh;
+    margin: auto;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    background-color: darkslategray;
+}
+
+app-imagenes-hijo{
+    margin: auto;
+}
