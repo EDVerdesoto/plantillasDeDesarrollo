@@ -1,1 +1,17 @@
-<p>validar-formulario-hijo works!</p>
+<form [formGroup]="formulario">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" formControlName="nombre" />
+        <div *ngIf="formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched">
+        El nombre es obligatorio.
+        </div>
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" />
+        <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched">
+        Debes ingresar un email válido.
+        </div>
+    </div>
+</form>

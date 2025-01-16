@@ -1,1 +1,9 @@
-<p>imagenes-padre works!</p>
+<div class="gallery">
+
+    <button (click)="retrocederImagen()"> < </button>
+    <app-imagenes-hijo></app-imagenes-hijo>
+    <button (click)="avanzarImagen()"> > </button>
+    
+</div>
+
+<p>Imagen actual: {{ imagenActual }}</p>
